@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cámaras</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="css/estilos_main.css">
+    <link rel="stylesheet" href="css/giai_buttons.css">
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <!--datepicker-->
+    <link rel="stylesheet" href="datepicker/datepicker.min.css">
+
+
+</head>
+<body>
+
+
+    <div class="container-fluid">
+
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+
+            <div class="container-fluid fs-4">
+
+                <a class="navbar-brand" href="http://www.ign.es/web/ign/portal/vlc-area-volcanologia" style="color: white;">
+                    <img src="img/logo.png" alt="" width="35" height="35" class="d-inline-block align-middle"> <span class="ms-1 d-inline-block align-middle"></span>
+                </a>
+
+                <!-- <a class="navbar-brand" href="http://www.ign.es/web/ign/portal/vlc-area-volcanologia" style="color:white">IGN</a> -->
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+
+                    <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"  style="color:white">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"  style="color:white">Info</a>
+                    </li>                  
+                    </ul>
+
+                </div>
+
+                <span class="navbar-text me-5 fst-italic fw-light" style="color:white" id="titulo_cam">CAM</span>
+
+            </div>
+
+        </nav>
+
+    </div>    
+
+    <div class="container text-center mb-5" style="margin-top: 120px; margin-bottom: 50px">
+        <p class="fs-3 fw-light t-ws" id="subtitulo"></p>
+    </div>
+    
+    <div class="container mt-5 fs-5" style="margin-bottom: 100px">
+
+        <div class="row fila">
+
+            <div class="col-12 col-lg-8 panel d-flex justify-content-center align-items-center">
+
+                <img src="imagenes/actual.jpg" style="width: 640px; height: 480px" class="img-fluid border border-dark border-2 shadow-lg" alt="">
+
+            </div>
+
+            <div class="col-12 col-lg-4 panel">
+
+
+                <div class="d-flex justify-content-center align-items-center mb-1 mt-5 t-ws lead">
+                <span>Selecciona una fecha</span> 
+                </div>
+
+                <div class="d-flex justify-content-center align-items-center mt-1 mb-4">                    
+                    <input type="text" id="calendario" class="text-center fw-bold" style="width: 150px">
+                </div>
+
+                <div class="d-flex justify-content-center align-items-center mt-3 t-ws lead">
+                    <span>Imágenes disponibles</span> 
+                </div>
+
+                <div class="d-flex justify-content-center align-items-center mb-3">
+                    <!-- <input type="text" class="text-center"> -->
+                    <select class="form-select w-50" id="seleccion"></select>
+                </div>
+
+                <div class=" d-flex justify-content-center align-items-center mb-3">
+                    <button id="boton_ver" class="fill2">Ver</button>
+                <!-- </div>
+
+                <div class=" d-flex justify-content-center align-items-center mb-3"> -->
+                    <button id="boton_descargar" class="fill ms-3"> Descargar</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer pie d-flex justify-content-center align-items-center fs-5 fst-italic fw-light">
+        <span style="color: grey" id="footer_label">Centro Geofísico de Canarias, Instituto Geográfico Nacional</span>
+    </div>
+
+
+    <script type="text/javascript" src="datepicker/datepicker.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
